@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration</title>
+        <link rel="icon" href="logo.png">
+    </head>
+
+    <body>
+        <center>   
+            <!--
+            old HTML attributes:
+            1. align: - horizontal alignment
+                      - values: left, center, right
+            
+            2. valign:- vertical alignment (mostly inside tables, <td valign="">)
+                      - values: top, middle, bottom
+            --> 
+            <h2>
+                <img src="logo.png" width="50" height="50" valign="middle">
+                Welcome to Registration Page!
+            </h2>
+        </center>
+        <hr>
+
+        <center>
+            <h2>Registration Form</h2>
+        </center>
+
+        <h3>1. Personal Information</h3>
+        
+        <form>
+            <table>
+
+                <tr>
+                    <td>Full Name: </td> 
+                    <td> <input type="text" placeholder="Enter your full name"> </td>
+                </tr>
+
+                <tr>
+                    <td>Student ID: </td> 
+                    <td> <input type="text" placeholder="Enter your ID"> </td>
+                </tr>
+
+                <tr>
+                    <td>Date of Birth: </td> 
+                    <td> <input type="date" placeholder="Enter your DOB"> </td>
+                </tr>
+
+                <tr>
+                    <td>Gender: </td>
+
+                    <td>
+                        <input type="radio" name="Gender"> Male
+                        <input type="radio" name="Gender"> Female
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Email: </td>
+                    <td><input type="email" placeholder="Enter your email"></td>
+                </tr>
+
+                <tr>
+                    <td>Phone number: </td>
+                    <td><input type="number" placeholder="Enter phone number"></td>
+                </tr>
+
+                <tr>
+                    <td>Address: </td>
+                    <td><input type="text" placeholder="Enter your address"></td>
+                </tr>
+
+            </table>
+        </form>
+        <br>
+
+        <h3>2. Academic Information</h3>
+
+        <form>
+            <table>
+
+                <tr>
+                    <td>Faculty: </td> 
+                    <td>
+                        <!-- 
+                        selected → makes it the default shown on page load
+                        disabled → prevents the user from selecting it again after choosing another option
+                        required (at select) + value (at option) → prevents form submission while the placeholder is selected
+                        -->
+                        <select required>
+                            <option value="" disabled selected>Select your faculty</option>
+                            <option value="engineering">Engineering</option>
+                            <option value="multimedia">Multimedia</option>
+                            <option value="it">Info. Tech.</option>
+                            <option value="business">Business</option>
+                            <option value="management">Management</option>
+                            <option value="medical">Medical</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Semester: </td>
+
+                    <td>
+                        <select required>
+                            <option value="" disabled selected>Choose your semester</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>CGPA: </td>
+                    <td><input type="number" placeholder="Enter your pointer"></td>
+                </tr>
+
+                <tr>
+                    <td>Enrollment year:  </td>
+                    <td><input  type="number" placeholder="Enter the year"></td>
+                </tr>
+
+            </table>
+        </form>
+        <br>
+
+        <h3>3. Course Registration</h3>
+
+        <form>
+            Course options:
+            <br>
+
+            <input type="Checkbox">Diploma<br>
+
+            <input type="Checkbox">Foundation<br>
+
+            <input type="Checkbox">Bachelor Degree<br>
+
+            <input type="Checkbox">Master<br>
+                
+            <input type="Checkbox">PHD<br>
+                
+            <input type="Checkbox">ODL<br>
+        </form>
+        <br>
+
+        <h3>4. Upload Section</h3>
+
+        <form>
+            <table>
+
+                <tr>
+                    <td>Upload your transcript:</td>
+                    <td><input type="file"></td>
+                </tr>
+
+                <tr>
+                    <td>Upload your photo:</td>
+                    <td><input type="file"></td>
+                </tr>
+
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+
+                <tr>
+                    <td> <input type="reset">  </td>
+                    <td> <input type="submit"> </td>
+                </tr>
+
+            </table>
+        </form>
+        <br>
+
+    </body>
+</html>
